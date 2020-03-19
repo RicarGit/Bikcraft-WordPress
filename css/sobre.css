@@ -1,0 +1,25 @@
+.interna-sobre {
+    background: url("../img/bg-sobre.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.about-mission {
+    padding-top: 60px;
+}
+.about-mission p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1em;
+    padding-right: 60px;
+}
+.about-mission ul li {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+.equip-photo {
+    padding-top: 20px;
+}
+.equip-photo img {
+    border: 10px solid #fec63e;
+}
