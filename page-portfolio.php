@@ -35,7 +35,6 @@ get_header();
 			<?php include(TEMPLATEPATH . "/inc/portfolio-clients.php"); ?>
 		</section>
 
-<?php endwhile;
-else : endif; ?>
+<?php endwhile; else : endif; ?>
 
 <?php get_footer(); ?>

@@ -7,8 +7,8 @@ Description: Tema Criado para Bikcraft
 Version: 1.0
 */
 
-@import 'css/reset.css';
 @import 'css/normalize.css';
+@import 'css/reset.css';
 @import 'css/grid.css';
 @import 'css/sobre.css';
 @import 'css/products.css';
@@ -16,6 +16,10 @@ Version: 1.0
 @import 'css/contact.css';
 @import 'css/responsive.css';
 
+/* Estilos ADM Wordpress
+.customize-support .header {
+    margin-top: 32px;
+}*/
 
 /* General Styles */
 

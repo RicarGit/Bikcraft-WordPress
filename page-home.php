@@ -53,10 +53,6 @@ get_header();
 				<ul data-anime="3200" class="portfolio-list fadeInDown">
 					<?php include(TEMPLATEPATH . "/inc/portfolio-clients.php"); ?>
 				</ul>
-				<div data-anime="3600" class="call">
-					<p><?php the_field('call_portfolio'); ?></p>
-					<a href="portfolio/" class="btn">Portfólio</a>
-				</div>
 			</div>
 		</section>
 		<!-- Fecha Qualidade -->
