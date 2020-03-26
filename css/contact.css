@@ -11,9 +11,9 @@
 .form {
     padding-right: 60px;
 }
-.form label {
+#form-contact label {
     display: block;
-    color: #fff;
+    color: #000;
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 18px;
     line-height: 25px;
