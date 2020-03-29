@@ -1,0 +1,597 @@
+/*
+Theme Name: Bikcraft
+Theme URI: http://bikcraft.com
+Author: André Rafael
+Author URI: http://origamid.com/
+Description: Tema Criado para Bikcraft
+Version: 1.0
+*/
+
+@import 'css/normalize.css';
+@import 'css/reset.css';
+@import 'css/grid.css';
+@import 'css/sobre.css';
+@import 'css/products.css';
+@import 'css/portfolio.css';
+@import 'css/contact.css';
+
+/* Estilos ADM Wordpress
+.customize-support .header {
+    margin-top: 32px;
+}*/
+
+/* General Styles */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+.btn {
+    border: 3px solid #fec63e;
+    padding: 10px 30px;
+    color: #fec63e;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+.btn:hover {
+    color: #fff;
+    border-color: #fff;
+}
+.btn.btn-black:hover {
+    color: #000;
+    border-color: #000;
+}
+.subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.subtitle::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #000;
+    margin: 14px auto 10px auto;
+}
+.internal-subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.internal-subtitle::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #000;
+    margin: 8px 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* Header */
+
+
+.header {
+    width: 100%;
+    background-color: #fec63e;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.header-menu {
+    text-align: right;
+    
+}
+.header-menu ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.header-menu ul li a {
+    color: #000;
+    letter-spacing: .1em;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 10px 0;
+}
+.header-menu ul li a:hover {
+    color: #fff;
+}
+.header-menu a.menu-active {
+    color: #fff;
+}
+
+/* Introduction */
+
+.introducao {
+    width: 100%;
+    height: 380px;
+    margin-top: 92px;
+    text-align: center;
+    padding-top: 80px;
+}
+.introducao h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.quote-externo {
+    max-width: 320px;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.quote-externo p {
+    font-style: italic;
+}
+.quote-externo p::before,
+.quote-externo p::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 14px auto 10px auto;
+}
+.quote-externo cite {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+/* Internal Introduction */
+
+.introducao-interna {
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    text-align: center;
+    color: #fff;
+    padding-top: 35px;
+}
+.introducao-interna h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.introducao-interna h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px auto 10px auto;
+}
+
+/* Products */
+
+.products {
+    padding: 60px 0;
+}
+.products-list li {
+    background-color: #fec63e;
+    text-align: center;
+}
+.products-list li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+.products-list li h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #000;
+    margin: 2px auto;
+}
+.products-list li p {
+    padding: 10px 20px 20px 20px;
+}
+.products-icon {
+    background-color: #000;
+    padding: 20px;
+}
+.products-icon img {
+    margin: 0 auto;
+}
+.call {
+    padding-top: 40px;
+    text-align: center;
+    clear: both;
+}
+.call p {
+    margin-bottom: 20px;
+}
+
+/* Portfólio */
+
+.portfolio {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #000;
+}
+.portfolio .subtitle {
+    color: #fec63e;
+}
+.portfolio .subtitle::after {
+    background-color: #fec63e;
+}
+.portfolio-list li:last-child {
+    margin-top: 20px;
+}
+.portfolio .call p {
+    color: #fff;
+}
+
+/* Qualidade */
+
+.quality {
+    padding: 60px 0;
+}
+.quality::after {
+    content: "";
+    width: 634px;
+    height: 95px;
+    display: block;
+    background: url("img/linhas.svg") no-repeat center;
+    position: absolute;
+    top: 209px;
+    right: 162px;
+    z-index: -1;
+}
+.quality img {
+    margin: 0 auto;
+}
+.quality-list {
+    padding-top: 20px;
+    overflow: auto; /* Clear Fix */
+}
+.quality-list li {
+    text-align: center;
+    padding: 0 40px;
+}
+.quality-list li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+    z-index: -1;
+}
+.quality-list li h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px auto;
+}
+
+/* Footer */
+
+.break {
+    width: 100%;
+    height: 220px;
+    background: url("img/bg-footer.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 40px;
+}
+.break .quote-externo {
+    max-width: 400px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+.footer h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #fec63e;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+.footer h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fec63e;
+    margin: 6px 0 12px 0;
+}
+.footer-history {
+    padding-right: 40px;
+}
+.footer-contact ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer-social ul li a {
+    border: 3px solid #fec63e;
+    display: block;
+    padding: 10px;
+}
+.footer-social ul li a:hover {
+    border-color: #fff;
+}
+
+.copy {
+    width: 100%;
+    background-color: #fec63e;
+    padding: 20px 0;
+}
+
+/* JAVASCRIPT */
+
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 2000ms;
+}
+
+/* Nav Style */
+.js [data-slide-nav] {
+  display: block;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+}
+.js [data-slide-nav] > button {
+  display: inline-block;
+  margin: 4px;
+  padding: 0px;
+  width: 14px;
+  height: 14px;
+  border: none;
+  border-radius: 50%;
+  background: #1d1d1d;
+  text-indent: -100px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.js [data-slide-nav] > button.active {
+  background: #fec454;
+}
+
+/* ANIMATION */
+
+.js [data-anime] {
+    opacity: 0;
+}
+.js .fadeInDown {
+  transform: translate3d(0,-20px,0);
+}
+.js .fadeInUp {
+  transform: translate3d(0,20px,0);
+}
+.js .fadeInRight {
+  transform: translate3d(20px,0,0);
+}
+.js .fadeInLeft {
+  transform: translate3d(-20px,0,0);
+}
+.js .anime {
+    opacity: 1;
+    transform: none;
+    transition: opacity 800ms, transform 800ms;
+}
+
+#form-sucesso,
+#form-sucesso h2 {
+    color: #31aa29;
+}
+#form-erro,
+#form-erro h2 {
+    color: #f64540;
+}
+
+/* ESTILO RESPONSIVO */
+
+/* Estilo para tablets */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+
+/* Quality Home */
+.quality::after {
+    right: 66px;
+}
+.quality-list li {
+    padding: 0 10px;
+}
+
+/* Footer */
+.footer-social ul li a {
+    border: 3px solid #fec63e;
+    display: block;
+    padding: 6px;
+}
+.footer-social ul li a img {
+    width: 26px;
+    height: 26px;
+}
+
+/* Products */
+.item-product h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .1em;
+    font-weight: bold;
+    position: relative;
+    top: -150px;
+    text-align: center;
+    margin-bottom: -56px;
+}
+.product-icon {
+    padding: 41px 0;
+}
+.product-info p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 30px;
+    height: 122px;
+}
+.product-info ul li {
+    width: 181px;
+    height: 49px;
+}
+/* Orçamento */
+.form textarea {
+    max-width: 304px;
+}
+
+}
+
+/* Estilo para Smartphone */
+@media only screen and (max-width: 787px) {
+
+.header {
+    position: relative;
+}
+.header img {
+    margin: 0 auto 10px auto;
+}
+.header-menu {
+    text-align: center;
+}
+.header-menu ul li {
+    margin: 5px;
+}
+.header-menu ul li a {
+    border: 4px solid #000;
+    width: 136px;
+    display: block;
+    float: left;
+}
+.header-menu ul li a:hover {
+    border-color: #fff;
+}
+.header-menu a.menu-active {
+    border-color: #fff;
+}
+
+/* Introduction */
+.introducao {
+    margin-top: 0px;
+    padding-top: 40px;
+}
+.introducao h1 {
+    font-size: 36px;
+}
+
+/* Internal Introduction */
+.introducao-interna {
+    margin-top: 0;
+}
+
+/* Call */
+.call {
+    padding-top: 10px;
+}
+
+/* Quality Home */
+.quality {
+    padding: 45px 0;
+}
+.quality::after {
+    display: none;
+}
+
+/* About */
+.about-mission {
+    padding-top: 45px;
+}
+.about-mission p {
+    padding-right: 0px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.about-mission ul li {
+    font-size: 14px;
+    line-height: 25px;
+}
+.equip-photo {
+    margin-bottom: 0;
+}
+
+/* Products */
+.item-product h2 {
+    top: -100px;
+    margin-bottom: -68px;
+}
+.product-icon {
+    padding: 41px 0;
+}
+.product-info p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 30px;
+    height: auto;
+}
+.product-info ul li {
+    width: 149px;
+    height: 49px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 14px;
+}
+
+/* Orçamento */
+.form {
+    padding-right: 0;
+    margin-bottom: 50px;
+}
+.form textarea {
+    max-width: 300px;
+}
+.orcamento-dados ul {
+    padding-right: 0;
+}
+
+}
