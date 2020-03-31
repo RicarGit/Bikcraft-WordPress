@@ -24,11 +24,7 @@
             </div>
             <div class="grid-4 footer-social">
                 <h3>Redes Sociais</h3>
-                <ul>
-                    <li><a href="http://facebook.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/redes-sociais/facebook.svg" alt="Facebook Bikcraft"></a></li>
-                    <li><a href="http://instagram.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/redes-sociais/instagram.svg" alt="Instagram Bikcraft"></a></li>
-                    <li><a href="http://twitter.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/redes-sociais/twitter.svg" alt="Twitter Bikcraft"></a></li>
-                </ul>
+                <?php include(TEMPLATEPATH . "/inc/social-medias.php"); ?>
             </div>
         </div>
     </div>
