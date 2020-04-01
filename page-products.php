@@ -7,6 +7,18 @@ get_header();
 
 	<?php include(TEMPLATEPATH . "/inc/introduction.php"); ?>
 
+	<?php
+		$args = array (
+			'post_type' => 'produtos',
+			'order' => 'ASC'
+		);
+		$the_query = new WP_Query ( $args );
+	?>
+
+	<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+	<h1><?php the_title(); ?></h1>
+	<?php endwhile; else: endif; ?>
+
 	<section class="container item-product">
 		<div data-anime="1200" class="grid-11 fadeInLeft">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/produtos/bikcraft-passeio-1.jpg" alt="Bikcraft Passeio">
@@ -88,20 +100,7 @@ get_header();
 				<textarea id="mensagem" name="mensagem" required></textarea>
 				<button id="enviar" type="submit" class="btn">Enviar</button>
 			</form>
-			<div class="orcamento-dados grid-8">
-				<h3>Dados</h3>
-				<span>+55 21 93223 3232</span>
-				<span class="dados-email">orcamento@bikcraft.com</span>
-				<h3>Monte a sua Bikcraft</h3>
-				<p>Escolha as especificações</p>
-				<ul>
-					<li>- Cores</li>
-					<li>- Estilo</li>
-					<li>- Medidas</li>
-					<li>- Acessórios</li>
-					<li>- E Outros</li>
-				</ul>
-			</div>
+			<?php include(TEMPLATEPATH . "/inc/products-orcamento.php"); ?>
 		</div>
 	</section>
 
