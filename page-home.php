@@ -39,27 +39,27 @@ get_header();
 	<section class="products container">
 		<h2 data-anime="1600" class="subtitle fadeInDown">Produtos</h2>
 		<ul data-anime="2000" class="products-list fadeInDown">
+			<?php
+				$args = array(
+					'post_type' => 'produtos',
+					'order' => 'ASC'
+				);
+				$the_query = new WP_Query($args);
+			?>
+
+		<?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+
 			<li class="grid-1-3">
+				<a href="<?php the_permalink(); ?>">
 				<div class="products-icon">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/produtos/passeio.svg" alt="Bikcraft Passeio">
+					<img src="<?php the_field('product_icon'); ?>" alt="Bikcraft Passeio">
 				</div>
-				<h3>Passeio</h3>
-				<p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação.</p>
+				<h3><?php the_title(); ?></h3>
+				<p><?php the_field('product_resume'); ?></p>
+				</a>
 			</li>
-			<li class="grid-1-3">
-				<div class="products-icon">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/produtos/esporte.svg" alt="Bikcraft Esporte">
-				</div>
-				<h3>Esporte</h3>
-				<p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação.</p>
-			</li>
-			<li class="grid-1-3">
-				<div class="products-icon">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/produtos/retro.svg" alt="Bikcraft Retrô">
-				</div>
-				<h3>Retro</h3>
-				<p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação.</p>
-			</li>
+			<?php endwhile;	else: endif; ?>
+			<?php wp_reset_query(); wp_reset_postdata(); ?>
 		</ul>
 		<div data-anime="2400" class="call">
 			<p><?php the_field('call_products'); ?></p>

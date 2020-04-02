@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title><?php bloginfo('name'); ?></title>
+    <title><?php bloginfo('name'); ?><?php wp_title(' - '); ?></title>
     <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft.
 		Possuímos modelos Passeio, Retrô e Esporte.">
 
@@ -16,9 +16,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
     <script>
         document.documentElement.classList.add("js");
     </script>
@@ -37,12 +36,14 @@
                 </a>
             </div>
             <nav class="header-menu grid-12">
-                <ul>
-                    <li><a href="/wordpress/sobre/">Sobre</a></li>
-                    <li><a href="/wordpress/products/">Produtos</a></li>
-                    <li><a href="/wordpress/portfolio/">Portfólio</a></li>
-                    <li><a href="/wordpress/contact/">Contato</a></li>
-                </ul>
+                <?php
+                $args = array(
+                    'menu' => 'principal',
+                    'theme_location' => 'menu-principal',
+                    'container' => false
+                );
+                wp_nav_menu($args);
+                ?>
             </nav>
         </div>
     </header>

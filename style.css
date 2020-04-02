@@ -121,7 +121,7 @@ img {
 .header-menu ul li a:hover {
     color: #fff;
 }
-.header-menu a.menu-active {
+.header-menu ul li.current_page_item a {
     color: #fff;
 }
 
@@ -196,6 +196,9 @@ img {
 .products-list li {
     background-color: #fec63e;
     text-align: center;
+}
+.products-list li a {
+    color: #000;
 }
 .products-list li h3 {
     font-weight: bold;

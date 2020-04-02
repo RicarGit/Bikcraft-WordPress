@@ -42,11 +42,6 @@
     </div>
 </footer>
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/simple-anime.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/simple-slide.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/simple-form.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
-
 <!-- Inicio WordPress Footer -->
 <?php wp_footer(); ?>
 <!-- Final WordPress Footer -->
