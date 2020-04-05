@@ -13,11 +13,14 @@ get_header();
 						<?php the_sub_field('quote'); ?>
 						<cite><?php the_sub_field('quote_name'); ?></cite>
 					</blockquote>
-			<?php endwhile;	else : endif; ?>
+			<?php endwhile;
+			else : endif; ?>
 		</section>
 
 		<section class="portfolio">
-			<?php include(TEMPLATEPATH . "/inc/portfolio-clients.php"); ?>
+			<div data-anime="1600" class="container fadeInLeft" data-slide="portfolio">
+				<?php include(TEMPLATEPATH . "/inc/portfolio-clients.php"); ?>
+			</div>
 		</section>
 
 <?php endwhile;
